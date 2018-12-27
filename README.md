@@ -1,0 +1,1 @@
+Script to create and save a movie review in SQLite database.
