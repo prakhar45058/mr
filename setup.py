@@ -13,7 +13,7 @@ def get_long_description() -> str:
 
 setup(
     name="movie-review",
-    verison="1.0.0",
+    version="1.0.1",
     license="MIT",
     author="Dima Koskin",
     author_email="dmksknn@gmail.com",
@@ -22,7 +22,7 @@ setup(
     long_description=get_long_description(),
     long_description_content_type="text/markdown",
     python_requires=">=3.7",
-    py_modules=["movie"],
+    py_modules=["review"],
     install_requires=["isle"],
     entry_points={"console_scripts": ["review=review:main"]},
 )
