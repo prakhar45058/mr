@@ -133,8 +133,7 @@ def add_review(movie_id):
             }
         )
 
-
-if __name__ == "__main__":
+def main():
     args = parse_args()
     movies = list(islice(isle.search_movie(args.title, year=args.year), args.n))
 
@@ -152,3 +151,7 @@ if __name__ == "__main__":
         con.close()
 
     print_done()
+
+
+if __name__ == "__main__":
+    main()
